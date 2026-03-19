@@ -9,6 +9,7 @@ char frase[10] = "Bom dia!"; //entre colchetes ou chaves n sei o limite de carac
 double n3 = 1.234567; //permite maior precisão armazenando mais casas do que float
 int valor1, valor2, soma, sub, mult, numero, resto;
 float divi;
+float nota1, nota2, media;
 
 /*
 //usando a função print para mostrar valores com variaveis distintas;
@@ -36,7 +37,7 @@ printf("O valor da soma de %d e %d é igual a: %d.\n", valor1, valor2, soma); //
 printf("O valor da subtracao de %d e %d é igual a: %d.\n", valor1, valor2, sub);
 printf("O valor da multiplicacao de %d e %d é igual a: %d.\n", valor1, valor2, mult);
 printf("O valor da divisao de %d e %d é igual a: %.2f.\n", valor1, valor2, divi);
-*/
+
 
 //testando sobras e fazendo um sistem que mostra se o numero é par ou impar
 
@@ -53,10 +54,30 @@ if (resto == 0){
 } else {
     printf("O numero é impar!\n");
 }
+    */
+//vamos formatar variaveis//
 
+printf("Digite a primeira nota: .\n", nota1);
+scanf("%f", &nota1);
 
+printf("Digite a segunda nota: .\n", nota2);
+scanf("%f", &nota2);
 
+media = (float) (nota1 + nota2)/2;
 
+printf("A média é: %.2f. \n", media);
+
+//if aninhado//
+
+if (media >= 6){
+    printf("Voce foi aprovado!\n");
+} else 
+if (media < 3){
+printf("O aluno está reprovado");
+} else {
+    printf("O aluno está de recuperação!");
+}
+// switch - case //
 return 0;
 
 
