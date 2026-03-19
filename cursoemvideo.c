@@ -7,7 +7,7 @@ float n2 = 6.79; //variavel com decimais. mais precisa que int e menos que doubl
 char letra = 'a'; //variavel com caracter - usar %c para marcar
 char frase[10] = "Bom dia!"; //entre colchetes ou chaves n sei o limite de caracteres
 double n3 = 1.234567; //permite maior precisão armazenando mais casas do que float
-int valor1, valor2, soma, sub, mult, numero, resto;
+int valor1, valor2, soma, sub, mult, numero, resto, dia;
 float divi;
 float nota1, nota2, media;
 
@@ -54,7 +54,7 @@ if (resto == 0){
 } else {
     printf("O numero é impar!\n");
 }
-    */
+    
 //vamos formatar variaveis//
 
 printf("Digite a primeira nota: .\n", nota1);
@@ -77,7 +77,39 @@ printf("O aluno está reprovado");
 } else {
     printf("O aluno está de recuperação!");
 }
+    */
 // switch - case //
+
+printf("Digite um numero de 1 a 7:", dia);
+scanf("%d", &dia);
+switch(dia)
+{
+    case 1 :
+    printf("Domingo\n");
+    break;
+    case 2 :
+    printf("Segunda\n");
+    break;
+    case 3 :
+    printf("Terça\n");
+    break;
+    case 4 :
+    printf("Quarta\n");
+    break;
+    case 5 :
+    printf("Quinta\n");
+    break;
+    case 6 :
+    printf("Sexta\n");
+    break;
+    case 7 :
+    printf("Sábado\n");
+    break;
+
+    default :
+    printf("Valor inválido!\n");
+}
+
 return 0;
 
 
