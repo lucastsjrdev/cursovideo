@@ -148,22 +148,19 @@ printf("O aluno está reprovado");
 */
 
 //FOR LOOPING - REPETIÇÃO//
-
-for(cont = 1; cont <= 10; cont + 1);
+for(cont = 1; cont <= 10; cont = cont + 1)
 {
-    printf("Boa tarde \n");
+    printf("Boa tarde! \n");
+
 }
 
-return 0;
 
+return 0;
 
 }
 //apenas comentários
 //usaria <stdlib.h> e a função system("pause") - gera a mensagem de pressionar tecla para continuar
 //se eu estivesse usando alguma ide mais antiga como o devc++ por exemplo
 //variaveis nao podem ter ''ç'', acentos gráficos ou espaços
-
-
-
 
 //
