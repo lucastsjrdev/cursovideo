@@ -9,7 +9,7 @@ char frase[10] = "Bom dia!"; //entre colchetes ou chaves n sei o limite de carac
 double n3 = 1.234567; //permite maior precisão armazenando mais casas do que float
 int valor1, valor2, soma, sub, mult, numero, resto, dia;
 float divi;
-float nota1, nota2, media;
+float nota1, nota2, media, freq;
 
 /*
 //usando a função print para mostrar valores com variaveis distintas;
@@ -108,7 +108,7 @@ switch(dia)
 
     default :
     printf("Valor inválido!\n");
-} */
+} 
 //OPERADORES TERNÁRIOS//
 //ALTERNATIVA PARA IF ELSE CASO SEJA UMA SITUAÇÃO SIMPLES//
 
@@ -117,6 +117,33 @@ scanf("%d", &numero);
 //vamos testar >>>> verdadeiro e falso
 // depois da '?' é o que ocorre caso seja verdadeiro, depois do ':' é oq ocorre caso seja negativo ou falso
 numero > 0 ? printf("Positivo") : printf("Negativo");
+*/
+
+//OPERADORES LOGICOS
+
+printf("Digite a primeira nota: .\n", nota1);
+scanf("%f", &nota1);
+
+printf("Digite a segunda nota: .\n", nota2);
+scanf("%f", &nota2);
+
+printf("Digite qual foi sua frequencia: \n");
+scanf("%f", &freq);
+
+media = (float) (nota1 + nota2)/2;
+
+printf("A média é: %.2f. \n", media);
+
+//if aninhado//
+
+if (media >= 6 && freq >= 75){ //operador logico && - 2 ''es'' comercial
+    printf("Voce foi aprovado!\n");
+} else 
+if (media < 3 || freq < 75){ // operador logico || - significa 'OU'
+printf("O aluno está reprovado");
+} else {
+    printf("O aluno está de recuperação!");
+}
 
 return 0;
 
