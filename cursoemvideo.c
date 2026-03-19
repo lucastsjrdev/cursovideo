@@ -77,14 +77,14 @@ printf("O aluno está reprovado");
 } else {
     printf("O aluno está de recuperação!");
 }
-    */
+    
 // switch - case //
 
 printf("Digite um numero de 1 a 7:", dia);
 scanf("%d", &dia);
 switch(dia)
 {
-    case 1 :
+    case 1 : //case NAO TRABALHA com condicionais, diferente do IF//
     printf("Domingo\n");
     break;
     case 2 :
@@ -108,7 +108,15 @@ switch(dia)
 
     default :
     printf("Valor inválido!\n");
-}
+} */
+//OPERADORES TERNÁRIOS//
+//ALTERNATIVA PARA IF ELSE CASO SEJA UMA SITUAÇÃO SIMPLES//
+
+printf("Digite um numero inteiro? ");
+scanf("%d", &numero);
+//vamos testar >>>> verdadeiro e falso
+// depois da '?' é o que ocorre caso seja verdadeiro, depois do ':' é oq ocorre caso seja negativo ou falso
+numero > 0 ? printf("Positivo") : printf("Negativo");
 
 return 0;
 
