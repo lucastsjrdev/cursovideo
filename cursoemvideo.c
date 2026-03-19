@@ -10,6 +10,7 @@ double n3 = 1.234567; //permite maior precisão armazenando mais casas do que fl
 int valor1, valor2, soma, sub, mult, numero, resto, dia;
 float divi;
 float nota1, nota2, media, freq;
+int cont;
 
 /*
 //usando a função print para mostrar valores com variaveis distintas;
@@ -117,7 +118,7 @@ scanf("%d", &numero);
 //vamos testar >>>> verdadeiro e falso
 // depois da '?' é o que ocorre caso seja verdadeiro, depois do ':' é oq ocorre caso seja negativo ou falso
 numero > 0 ? printf("Positivo") : printf("Negativo");
-*/
+
 
 //OPERADORES LOGICOS
 
@@ -143,6 +144,14 @@ if (media < 3 || freq < 75){ // operador logico || - significa 'OU'
 printf("O aluno está reprovado");
 } else {
     printf("O aluno está de recuperação!");
+}
+*/
+
+//FOR LOOPING - REPETIÇÃO//
+
+for(cont = 1; cont <= 10; cont + 1);
+{
+    printf("Boa tarde \n");
 }
 
 return 0;
